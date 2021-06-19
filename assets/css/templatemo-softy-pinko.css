@@ -1193,119 +1193,102 @@ team
 
 /* 
 ---------------------------------------------
-pricing
+Work Area
 --------------------------------------------- 
 */
-.pricing-item {
-  background: #FFFFFF;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  padding: 30px 0px 40px 0px;
-}
+* {box-sizing:border-box}
 
-.pricing-item.active .pricing-header {
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
   position: relative;
-}
-
-.pricing-item.active .pricing-header .pricing-title {
-  color: #1e1e1e;
-}
-
-.pricing-item.active .pricing-body .price-wrapper {
-  background-color: #ff589e;
-}
-
-.pricing-item.active .pricing-body .price-wrapper .currency {
-  color: #fff;
-}
-
-.pricing-item.active .pricing-body .price-wrapper .price {
-  color: #fff;
-}
-
-.pricing-item.active .pricing-body .price-wrapper .period {
-  color: #fff;
-}
-
-.pricing-item .pricing-header {
-  text-align: center;
-  display: block;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.pricing-item .pricing-header .pricing-title {
-  font-weight: 500;
-  font-size: 17px;
-  letter-spacing: 0.25px;
-  color: #1e1e1e;
-  width: 180px;
-  height: 40px;
-  line-height: 40px;
-  left: 0px;
-  right: 0px;
   margin: auto;
 }
 
-.pricing-item .pricing-body {
-  margin-bottom: 40px;
+/* Hide the images by default */
+.mySlides-fade {
+  display: none;
 }
 
-.pricing-item .pricing-body .price-wrapper {
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(242, 242, 254);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 13px;
-  background: #8261ee;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 40px;
-  margin-top: 5px;
-  border-radius: 20px;
 }
 
-.pricing-item .pricing-body .price-wrapper .currency {
-  height: 47px;
-  font-weight: 500;
-  font-size: 32px;
-  color: #fff;
-  position: relative;
-  top: -1px;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-.pricing-item .pricing-body .price-wrapper .price {
-  font-weight: 500;
-  font-size: 28px;
-  color: #fff;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.pricing-item .pricing-body .price-wrapper .period {
-  font-weight: 400;
-  font-size: 14px;
-  color: #fff;
-  display: block;
-  letter-spacing: 0.88px;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-.pricing-item .pricing-body .list li {
-  text-align: center;
-  margin-bottom: 12px;
-  font-weight: 400;
-  font-size: 13px;
-  color: #7a7a7a;
-  letter-spacing: 0.25px;
-  text-decoration: line-through;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.pricing-item .pricing-body .list li.active {
-  color: #7a7a7a;
-  text-decoration: none;
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-.pricing-item .pricing-footer {
-  text-align: center;
-  margin-top: 50px;
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 /* 
@@ -1374,7 +1357,7 @@ blog
 }
 
 .blog-post-thumb a.main-button  {
-  margin-top: 10px;
+  margin-top: 20px;
   display: inline-block;
 }
 
