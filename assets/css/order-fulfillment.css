@@ -1270,3 +1270,137 @@ Preloader
     opacity: 0;
   }
 }
+
+/* 
+---------------------------------------------
+Requirement: Banner
+--------------------------------------------- 
+*/
+
+#req-banner {
+  margin-top: 180px;
+}
+
+#banner-text{
+  text-align: center;
+}
+
+#banner-text h1{
+  color:#8261ee;
+  margin-bottom: 20px;
+}
+
+#req-banner img{
+  max-width: 100%;
+  max-height: auto;
+}
+
+.tasks{
+  margin-left: 200px;
+  margin-right: 250px;
+  margin-bottom: 100px;
+  height: fit-content;
+}
+
+.task-details {
+  margin-left: 50px;
+}
+
+.task-card {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.task-card img {
+  height: 360px;
+  width: auto;
+  position: sticky;
+  top: 0px;
+}
+
+.list, .hta-text {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.tasks .task-card .task-details .list li {
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: 0 1fr;
+  grid-gap: 1.75em;
+  align-items: start;
+}
+
+.tasks .task-card .task-details .list ul li::before {
+  content: "●";
+}
+
+.tasks .task-card .task-details .list ul #more-1-1,
+.tasks .task-card .task-details .list ul #more-1-2,
+.tasks .task-card .task-details .list ul #more-2-1,
+.tasks .task-card .task-details .list ul #more-2-2,
+.tasks .task-card .task-details .list ul #more-3-1,
+.tasks .task-card .task-details .list ul #more-3-2,
+.tasks .task-card .task-details .list ul #more-4-1,
+.tasks .task-card .task-details .list ul #more-4-2,
+.tasks .task-card .task-details .list ul #more-5-1,
+.tasks .task-card .task-details .list ul #more-5-2 {
+  display: none;
+}
+
+#readMoreClick-1-1, #readMoreClick-2-1,
+#readMoreClick-3-1, #readMoreClick-4-1,
+#readMoreClick-5-1 {
+  color: #ff589e;
+}
+
+#hta-1, #hta-2, #hta-3, #hta-4, #hta-5 {
+  margin-top: 10px;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
+  justify-content: center;
+}
+
+.modal-content {
+  margin-top: 80px;
+  width: 80%;
+  max-width: 700px;
+}
+
+.section-break-2 {
+  background-color: transparent;
+  border: 0;
+  border-top: 1px solid rgb(200, 200, 200);
+  height: 1px;
+  margin: 80px auto 80px auto;
+  text-align: center;
+  width: 80%;
+}
+
+.section-break-2::before {
+  color: darken(rgb(200, 200, 200), 20%);
+  content: '\25D2';
+  display: inline-block;
+  font-size: 20px;
+  left: 50%;
+  letter-spacing: 0;
+  line-height: 1;
+  text-indent: -1px;
+  transform: translateY(-53%);
+  width: 15px;
+}
