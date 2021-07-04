@@ -86,11 +86,43 @@
                         <h2 class="section-title">Description</h2>
                     </div>
                     <div class="left-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>
+                            The Ordering sub-process starts with the creation of a Purchase Order by the Order Management Department.
+                            <br>
+                            A Purchase Order needs to be approved by the Supply Department and may then be subject to a number of modifications, though it requires confirmation within a certain time frame.
+                            The creation of a Purchase Order is handled by an Order Department clerk, who may choose to reallocate the task to another Purchase Order Manager with or without the work performed on it thus far. Upon completing the Purchase Order, the Purchase Order Manager needs to decide which Purchase Order Manager will work on modification requests as they may eventuate at a later stage.
+                            <br>
+                            The default Purchase Order Manager for Purchase Order modifications and confirmations is Carmine Marino. The completed Purchase Order is passed on to a Supply Officer who needs to approve it.
+                            Moreover, it is possible to specify whether the order needs to be invoiced and whether it is part of a prepayment agreement between the client and Genko Oil. Once a Purchase Order has been approved, repeated modifications may be requested.
+                        </p>
                     </div>
+                </div>
+                <div class="normal-text">
+                    <p>
+                        After confirmation of a Purchase Order, a route guide needs to be prepared and the trailer usage needs to be estimated. The route guide is prepared by determining the track points that are going to be visited during the shipment. The trailer usage is determined by estimating the number of packages for the shipment, where each package has an identifier and a fixed volume of 25, 50, 100, or 200 lbs.
+                        These operations are performed in parallel by the two tasks Prepare Route Guide and Estimate Trailer Usage. The former task is allocated to the Shipment Planner with the shortest work queue, while the latter task is allocated to the Shipment Planner who was allocated an instance of this task the longest time ago. Once a Supply Officer has chosen to perform this task, they have the privilege to reallocate it to someone else without loss of the work performed thus far, and to suspend and resume working on the task. In addition, the system automatically starts the task for a Supply Officer once they have committed themselves to perform it.
+                        After the task Prepare Transportation Quote, based on the total volume of the freight and on the number of packages, a distinction is made among shipments that require a full truck load, those that require less than a truck load, and those that simply concern a single package. For shipments that require a full truckload, Client Liaisons from the Order Department try to arrange a Pickup appointment and a Delivery appointment by specifying the location for pickup/delivery and any specific instructions.
+                        <br>
+                        The Client Liaisons associated with these two tasks should be different. When the shipment consists of more than one package but a dedicated truck is not required, then a Warehouse Officer arranges a Pickup appointment and a Client Liaison tries to arrange a delivery appointment.
+                        Afterward, a Senior Supply Officer, who holds a Bachelor’s in Supply Chain and Logistics Management, creates a Bill of Lading, which, similar to the Shipment Information document, requires the specification of an authorization code and a consignee number. If no Delivery appointment was made prior, a Supply Officer takes care of this and the remainder of the process is the same as for a shipment that requires a dedicated truck.
+                        For shipments consisting of a single package, the process is straightforward. All that needs to be done is by a Supply Officer – one who has the most experience in performing this particular task – to create a Motor Carrier Pickup manifest.
+                        <br>
+                        <br>
+                        After a freight has been picked up, the Payment subprocess can start. This process has two components, one which is concerned with payment for the shipment and one which is concerned with payment for the freight. The first task that needs to be performed in dealing with the payment for a shipment is the production of a Shipment Invoice containing the shipment costs related to the order number, the shipment number, and the company to be invoiced.
+                        This document includes a shipment payment order number that refers to both the order and the shipment numbers, the shipment costs, and the details of the beneficiary, which includes the company, the name and code of the beneficiary bank, and the name and number of the bank account.
+                        <br>
+                        A Senior Finance Officer who is the superior of this Finance Officer has to approve this document. In the latter case and in the case of correct payment, the shipment payment process is completed. An Account Manager can choose to have adjustment tasks to be started immediately for them upon completion of the processing of a Shipment Payment in order to expedite matters.
+                        As regards the payment for freight, a Purchase Order Manager specifies during the creation of a Purchase Order whether an invoice is required or not.
+                        <br>
+                        <br>
+                        When a TrackPoint is visited, a Track point Notice is issued by the Courier, registering the truck’s arrival and departure time, plus additional notes. Once all track points have been visited, Carrier Admin Officers need to log a Track point Order Entry for each TrackPoint, which contains a report for the specific Track point so that this information can be audited in the future.
+                        Track point Order Entries can be logged in parallel so long as there are Carrier Admin Officers available to work on the entries. An Acceptance Certificate refers to an order number and a shipment number and contains the acceptance date and delivery notes.
+                        <br>
+                        <br>
+                        After the delivery of the freight, clients may request a Return of Merchandise or may want to lodge a Loss or Damage Claim. A Return of Merchandise document contains the reason for return and the line items to be returned, while a Loss or Damage Claim indicates the reason for the claim.
+                        <br>
+                        <br>
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -126,7 +158,7 @@
                     <div class="team-item">
                         <div class="team-content">
                             <i><img src="assets/images/members/members-icon.png" alt=""></i>
-                            <p class="contribution">Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio. 
+                            <p class="contribution">Hello, my name is Ali Nurdin. You can call me Ali. My NIM (Nomor Induk Mahasiswa / Student Identification Number) is 191524004. I am currently studying at the D4-Informatics Engineering study program, Computer Informatics Engineering Department, Bandung State Polytechnic. Specifically, I'm currently in 2nd grade
                                 <span class = "dots">...</span>
                                 <a href="#" class="learn-more" onclick="seeDetails('ali')">Learn More</a>
                             </p>
@@ -147,7 +179,7 @@
                     <div class="team-item">
                         <div class="team-content">
                             <i><img src="assets/images/members/members-icon.png" alt=""></i>
-                            <p class="contribution-1">Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio. 
+                            <p class="contribution-1">Hello, my name is Amalia Hajarani. You can call me Lala. My NIM (Nomor Induk Mahasiswa / Student Identification Number) is 191524005. I am currently studying at the D4-Informatics Engineering study program, Computer Informatics Engineering Department, Bandung State Polytechnic. Specifically, I'm currently in 2nd grade.
                                 <span class = "dots-1">...</span>
                                 <a href="#" class="learn-more-1"  onclick="seeDetails('amalia')">Learn More</a>
                             </p>
@@ -168,7 +200,7 @@
                     <div class="team-item">
                         <div class="team-content">
                             <i><img src="assets/images/members/members-icon.png" alt=""></i>
-                            <p class="contribution-2">Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio. 
+                            <p class="contribution-2">Hello, my name is Farra Jessica. You can call me Farra or Jess. My NIM (Nomor Induk Mahasiswa / Student Identification Number) is 191524008. I am currently studying at the D4-Informatics Engineering study program, Computer Informatics Engineering Department, Bandung State Polytechnic. Specifically, I'm currently in 2nd grade. 
                                 <span class = "dots-2">...</span>
                                 <a href="#" class="learn-more-2" onclick="seeDetails('farra')">Learn More</a>
                             </p>
@@ -189,7 +221,7 @@
                     <div class="team-item">
                         <div class="team-content">
                             <i><img src="assets/images/members/members-icon.png" alt=""></i>
-                            <p class="contribution-3">Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio. 
+                            <p class="contribution-3">Hello, my name is Laras Rasdiyani. You can call me Laras or Lasras. My NIM (Nomor Induk Mahasiswa / Student Identification Number) is 191524016. I am currently studying at the D4-Informatics Engineering study program, Computer Informatics Engineering Department, Bandung State Polytechnic. Specifically, I'm currently in 2nd grade.
                                 <span class = "dots-3">...</span>
                                 <a href="#" class="learn-more-3" onclick="seeDetails('laras')">Learn More</a>
                             </p>
@@ -209,7 +241,15 @@
 
         <div id="popup-ali">
             <h2>Ali</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in condimentum ligula. Praesent suscipit, dui nec scelerisque viverra, mauris justo aliquet velit, vitae facilisis sapien mi in neque. Mauris cursus rutrum ipsum, eu pharetra lacus elementum eget. Etiam quis est urna. Ut consequat facilisis egestas. Vivamus pretium laoreet fringilla. Curabitur odio quam, maximus sed ullamcorper sed, lacinia eu ipsum. Quisque condimentum est eget urna ornare bibendum. Nulla tempor odio eu molestie varius. Nullam in interdum ligula. Sed ullamcorper magna in finibus egestas. Mauris auctor dolor eget turpis placerat pretium. Vivamus a arcu aliquet, ornare metus ac, molestie magna. Phasellus vitae justo sapien. Nulla vitae augue dolor. Proin egestas nisl est, id laoreet augue sollicitudin sed.</p>
+            <p>Hello, my name is Ali Nurdin. You can call me ALi. My NIM (Nomor Induk Mahasiswa / Student Identification Number) is 191524004. I am currently studying at the D4-Informatics Engineering study program, Computer Informatics Engineering Department, Bandung State Polytechnic. Specifically, I'm currently in 2nd grade. I was born in Bandung and currently live in Bandung. My hobby is Sleeping. So far, my favourite subject in my major is User Interface Design. My life motto is "Just Keep Dreaming”.
+                My contributions to this work include:
+                <br>
+                1. Analyze the Ordering process
+                <br>
+                2. Create a Hierarchical Task Analysis (for the Ordering process section)
+                <br>
+                If you want to see my contribution in more detail, please click the button below
+            </p>
             <a href="#" class="learn-more close-button" onclick="seeDetails('ali')">Close</a>
             <form style="margin-top: 20px;" action="https://trello.com/b/KrSOcHy8">
                 <button type="submit" style="background-color:#ff589e;">Ali`s Task</button>
@@ -218,7 +258,15 @@
 
         <div id="popup-amalia">
             <h2>Amalia</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in condimentum ligula. Praesent suscipit, dui nec scelerisque viverra, mauris justo aliquet velit, vitae facilisis sapien mi in neque. Mauris cursus rutrum ipsum, eu pharetra lacus elementum eget. Etiam quis est urna. Ut consequat facilisis egestas. Vivamus pretium laoreet fringilla. Curabitur odio quam, maximus sed ullamcorper sed, lacinia eu ipsum. Quisque condimentum est eget urna ornare bibendum. Nulla tempor odio eu molestie varius. Nullam in interdum ligula. Sed ullamcorper magna in finibus egestas. Mauris auctor dolor eget turpis placerat pretium. Vivamus a arcu aliquet, ornare metus ac, molestie magna. Phasellus vitae justo sapien. Nulla vitae augue dolor. Proin egestas nisl est, id laoreet augue sollicitudin sed.</p>
+            <p> Hello, my name is Amalia Hajarani. You can call me Lala. My NIM (Nomor Induk Mahasiswa / Student Identification Number) is 191524005. I am currently studying at the D4-Informatics Engineering study program, Computer Informatics Engineering Department, Bandung State Polytechnic. Specifically, I'm currently in 2nd grade. I was born in Surabaya, but currently live in Bandung. My hobby is sleeping. So far, my favourite subject in my major is User Interface Design. My life motto is "Just Keep Swimming".
+                My contributions to this work include:
+                <br>
+                1. Analyze the Payment process
+                <br>
+                2. Create a Hierarchical Task Analysis (for the Payment process section)
+                <br>
+                If you want to see my contribution in more detail, please click the button below
+                </p>
             <a href="#" class="learn-more close-button" onclick="seeDetails('amalia')">Close</a>
             <form style="margin-top: 20px;" action="https://trello.com/b/KrSOcHy8">
                 <button type="submit" style="background-color:#ff589e;">Amalia`s Task</button>
@@ -227,7 +275,15 @@
 
         <div id="popup-farra">
             <h2>Farra</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in condimentum ligula. Praesent suscipit, dui nec scelerisque viverra, mauris justo aliquet velit, vitae facilisis sapien mi in neque. Mauris cursus rutrum ipsum, eu pharetra lacus elementum eget. Etiam quis est urna. Ut consequat facilisis egestas. Vivamus pretium laoreet fringilla. Curabitur odio quam, maximus sed ullamcorper sed, lacinia eu ipsum. Quisque condimentum est eget urna ornare bibendum. Nulla tempor odio eu molestie varius. Nullam in interdum ligula. Sed ullamcorper magna in finibus egestas. Mauris auctor dolor eget turpis placerat pretium. Vivamus a arcu aliquet, ornare metus ac, molestie magna. Phasellus vitae justo sapien. Nulla vitae augue dolor. Proin egestas nisl est, id laoreet augue sollicitudin sed.</p>
+            <p> Hello, my name is Farra Jessica. You can call me Farra or Jess. My NIM (Nomor Induk Mahasiswa / Student Identification Number) is 191524008. I am currently studying at the D4-Informatics Engineering study program, Computer Informatics Engineering Department, Bandung State Polytechnic. Specifically, I'm currently in 2nd grade. I was born in Kuningan, but currently live in Bandung. My hobbies are singing, designing, listening to music, traveling and watching movies. So far, my favourite subject in my major is User Interface Design. My life motto is "I can do all things through God who strengthens me".
+                My contributions to this work include:
+                <br>
+                1. Analyze the Carrier Appointment process
+                <br>
+                2. Create a Hierarchical Task Analysis (for the Carrier Appointment process section)
+                <br>
+                If you want to see my contribution in more detail, please click the button below
+                </p>
             <a href="#" class="learn-more close-button" onclick="seeDetails('farra')">Close</a>
             <form style="margin-top: 20px;" action="https://trello.com/b/KrSOcHy8">
                 <button type="submit" style="background-color:#ff589e;">Farra`s Task</button>
@@ -236,7 +292,15 @@
 
         <div id="popup-laras">
             <h2>Laras</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in condimentum ligula. Praesent suscipit, dui nec scelerisque viverra, mauris justo aliquet velit, vitae facilisis sapien mi in neque. Mauris cursus rutrum ipsum, eu pharetra lacus elementum eget. Etiam quis est urna. Ut consequat facilisis egestas. Vivamus pretium laoreet fringilla. Curabitur odio quam, maximus sed ullamcorper sed, lacinia eu ipsum. Quisque condimentum est eget urna ornare bibendum. Nulla tempor odio eu molestie varius. Nullam in interdum ligula. Sed ullamcorper magna in finibus egestas. Mauris auctor dolor eget turpis placerat pretium. Vivamus a arcu aliquet, ornare metus ac, molestie magna. Phasellus vitae justo sapien. Nulla vitae augue dolor. Proin egestas nisl est, id laoreet augue sollicitudin sed.</p>
+            <p> Hello, my name is Laras Rasdiyani. You can call me Laras or Lasras. My NIM (Nomor Induk Mahasiswa / Student Identification Number) is 191524016. I am currently studying at the D4-Informatics Engineering study program, Computer Informatics Engineering Department, Bandung State Polytechnic. Specifically, I'm currently in 2nd grade. I was born in Bandung and currently live in Bandung. My hobby is Writing. So far, my favourite subject in my major is User Interface Design. My life motto is "Alhamdulilah for everything”.
+                My contributions to this work include:
+                <br>
+                1. Analyze the Freight in Transit and Freight in Delivered process
+                <br>
+                2. Create a Hierarchical Task Analysis (for the Freight in Transit and Freight in Delivered process section)
+                <br>
+                If you want to see my contribution in more detail, please click the button below
+                </p>
             <a href="#" class="learn-more close-button" onclick="seeDetails('laras')">Close</a>
             <form style="margin-top: 20px;" action="https://trello.com/b/KrSOcHy8">
                 <button type="submit" style="background-color:#ff589e;">Laras`s Task</button>
