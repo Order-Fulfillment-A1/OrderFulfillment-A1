@@ -969,10 +969,11 @@ Members
 
 #popup-ali.activate, #popup-amalia.activate,
 #popup-farra.activate, #popup-laras.activate {
-  top: 50%;
+  top: 55%;
   visibility: visible;
   opacity: 1;
   transition: 0.5s;
+  text-align: justify;
 }
 
 .close-button {
