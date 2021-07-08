@@ -1436,8 +1436,8 @@ Requirement: Banner
 	font-family: 'PT Serif', sans-serif;
 	font-size: 16px;
 	color: rgba(0, 0, 0, 0.87);
-	// Remove comment below to see the basegrid alignment
-	// @include baseline(8);
+	/* Remove comment below to see the basegrid alignment
+	// @include baseline(8); */
 }
 
 .entry-title {

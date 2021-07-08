@@ -76,54 +76,48 @@
                     <div class="list">
                         <h5>User</h5>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet metus quis eros elementum, non eleifend eros gravida.
-                                Cras volutpat ligula et metus volutpat, et commodo est faucibus.
+                            <li>PO Manager
+                                <br>PO Manager would prefer an interface that has a color contrast for each task they're assigned to since they would handle some work. Alson, an interface that would make the creation of a receipt easier.
                             </li>
-                            <li>Nulla vel ligula sollicitudin, maximus purus id, tempus ante.
-                                <br>blablabla
+                            <li>Supply Officer
+                                <br>A Supply Officer would love an interface that makes them comfortable enough to read some documents and to scan which work should be done first.
                             </li>
                             <span id="more-1-1">
-                                <li>Donec nec mauris condimentum, efficitur magna ac, faucibus ex
-                                    <br>blablabla
-                                </li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    <br>blablabla
-                                </li>
-                                <li>Nulla consectetur lorem et finibus blandit
-                                    <br>blablabla
-                                </li>
                             </span>
-
                         </ul>
                     </div>
 
                     <div class="list">
                         <h5>Task Description</h5>
                         <ul>
-                            <li>Donec nec mauris condimentum, efficitur magna ac, faucibus ex
-                                <br>blablabla
+                            <li>Create Purchase Order
+                                <br>The PO Manager is responsible for creating the purchase order (PO). On its creation, 
+                                the process might be reallocated to another PO Manager. When someone starts to create the PO, 
+                                the system will initiate the process automatically. PO contains some order details 
+                                like the client's company, freight cost, delivery address, and maybe some payment agreement.
                             </li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                <br>blablabla
+                            <li>Approve Purchase Order
+                                <br>Created PO would be either approved or not by a Supply Officer. At this process, the Supply Officer, 
+                                both Head of SD and SD Clerk may choose when they want to start working on it. 
                             </li>
                             <span id="dots-1-1"></span>
                             <span id="more-1-2">
-                                <li>Nulla consectetur lorem et finibus blandit
-                                    <br>blablabla
+                                <li>Modify Purchase Order
+                                    <br>This process starts if a PO has been approved. Every modification will be tracked by a revision number 
+                                    that is made in each modification process.
                                 </li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    <br>blablabla
+                                <li>Confirm Purchase Order
+                                    <br>If the modification result which done in the previous task is confirmed within 3 days, then the PO will continue to the next task.
                                 </li>
-                                <li>Nulla vel ligula sollicitudin, maximus purus id, tempus ante.
-                                    <br>blablabla
+                                <li>Order Timeout
+                                    <br>If the modification result is not being confirmed within 3 days, the remaining process for the PO will be terminated.
                                 </li>
                             </span>
                         </ul>
                         <a href="#" onclick="readMoreFunction('dots-1-1', 'more-1-1', 'more-1-2', 'readMoreClick-1-1')" id="readMoreClick-1-1">Read More</a>
                     </div>
                     <h5 class="hta-text">HTA</h5>
-                    <img id="hta-1" src="assets/images/dummy-hta.png" onclick="enlargeImage('target-1', 'hta-1', 'large-hta-1')">
+                    <img id="hta-1" src="assets/images/tasks/hta-freight-order.png" onclick="enlargeImage('target-1', 'hta-1', 'large-hta-1')">
 
                     <!-- The Modal -->
                     <div id="target-1" class="modal">
@@ -233,22 +227,15 @@
                     <div class="list">
                         <h5>User</h5>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet metus quis eros elementum, non eleifend eros gravida.
-                                Cras volutpat ligula et metus volutpat, et commodo est faucibus.
+                            <li>Supply Admin Officer
+                                <br>Supply Admin Officer would prefer an interface that has a color contrast for each task they're assigned to since they would handle some work.
                             </li>
-                            <li>Nulla vel ligula sollicitudin, maximus purus id, tempus ante.
-                                <br>blablabla
+                            <li>Finance officer
+                                <br>Finance Officers would love a simple interface so they can do their job efficiently. Also a neat interface for handling some finance related work.
                             </li>
                             <span id="more-3-1">
-                                <li>Donec nec mauris condimentum, efficitur magna ac, faucibus ex
-                                    <br>blablabla
-                                </li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    <br>blablabla
-                                </li>
-                                <li>Nulla consectetur lorem et finibus blandit
-                                    <br>blablabla
+                                <li>Account Manager
+                                    <br>Account Manager would prefer organized interface to see which client needs to be notified and also to handle ome finance related work.
                                 </li>
                             </span>
 
@@ -258,30 +245,29 @@
                     <div class="list">
                         <h5>Task Description</h5>
                         <ul>
-                            <li>Donec nec mauris condimentum, efficitur magna ac, faucibus ex
-                                <br>blablabla
+                            <li>Shipment Payment
+                                    <br>Payment for the shipment process starts with producing Shipment Invoice by the Supply Admin Officer. 
+                                        It contains shipment cost based on the number of orders, shipment number, and the company to be invoiced. Then a 
+                                        Finance Officer would check whether the PO may have been paid in advance or not. If it is, the Finance Officer would issue a 
+                                        Shipment Remittance. Other than that, a Shipment Payment Order will be issued. Senior Finance 
+                                        Officer is the one that can approve the document. Once the document is approved, 
+                                        the Account Manager will process the payment by specifying the balance. If a client makes an underpaid 
+                                        or an overpaid transaction, Account Manager will notify the customer.
                             </li>
-                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                <br>blablabla
+                            <li>Freight Payment
+                                <br>Supply Admin Officer will start this process after specified if invoice is required or not. 
+                                If it does, then the Supply Admin Officer will make an invoice containing details. 
+                                Then the freight payment process can be started after the invoice creation is done. Other than that, this process can start right away.
                             </li>
                             <span id="dots-3-1"></span>
                             <span id="more-3-2">
-                                <li>Nulla consectetur lorem et finibus blandit
-                                    <br>blablabla
-                                </li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    <br>blablabla
-                                </li>
-                                <li>Nulla vel ligula sollicitudin, maximus purus id, tempus ante.
-                                    <br>blablabla
-                                </li>
                             </span>
                         </ul>
                         <a href="#" onclick="readMoreFunction('dots-3-1', 'more-3-1', 'more-3-2', 'readMoreClick-3-1')" id="readMoreClick-3-1">Read More</a>
                     </div>
 
                     <h5 class="hta-text">HTA</h5>
-                    <img id="hta-3" src="assets/images/dummy-hta.png" onclick="enlargeImage('target-3', 'hta-3', 'large-hta-3')">
+                    <img id="hta-3" src="assets/images/tasks/hta-freight-payment.png" onclick="enlargeImage('target-3', 'hta-3', 'large-hta-3')">
 
                     <!-- The Modal -->
                     <div id="target-3" class="modal">
