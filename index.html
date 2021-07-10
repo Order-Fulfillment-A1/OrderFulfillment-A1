@@ -87,39 +87,41 @@
                     </div>
                     <div class="left-text">
                         <p>
-                            The Ordering sub-process starts with the creation of a Purchase Order by the Order Management Department.
+                            The Order Sub-Process begins with the Order Management Department creating an Order (Purchase Order) and is handled by the OD clerk. Purchase Order must be approved by the Supply Department.
+                            The OD clerk may choose to reallocate tasks to another Purchase Order manager. The Purchase Order Manager can also choose to stop working on the task and have the system offer it to the available Purchase Order manager again.
                             <br>
-                            A Purchase Order needs to be approved by the Supply Department and may then be subject to a number of modifications, though it requires confirmation within a certain time frame.
-                            The creation of a Purchase Order is handled by an Order Department clerk, who may choose to reallocate the task to another Purchase Order Manager with or without the work performed on it thus far. Upon completing the Purchase Order, the Purchase Order Manager needs to decide which Purchase Order Manager will work on modification requests as they may eventuate at a later stage.
+                            When a Purchase Order manager is offered a task to create a Purchase Order and they are willing to do so, the system will start the task automatically. The completed Purchase Order is forwarded to the Supply Department officer who has the authority to approve it.
+                            Supply Department officers can choose which approval tasks they will perform. The clerk can determine whether the order needs to be included in the bill of payment or not.
                             <br>
-                            The default Purchase Order Manager for Purchase Order modifications and confirmations is Carmine Marino. The completed Purchase Order is passed on to a Supply Officer who needs to approve it.
-                            Moreover, it is possible to specify whether the order needs to be invoiced and whether it is part of a prepayment agreement between the client and Genko Oil. Once a Purchase Order has been approved, repeated modifications may be requested.
+                            And whether it is part of the prepayment agreement between the customer and Genko Oil.
+                            After the Purchase Order is approved, the Purchase Order may be re-modified. Such modifications can be tracked by the revision number attached to the Purchase Order which increases with each change. If the original or any modified Purchase Order is rejected, the order process ends.
                         </p>
                     </div>
                 </div>
                 <div class="normal-text">
                     <p>
-                        After confirmation of a Purchase Order, a route guide needs to be prepared and the trailer usage needs to be estimated. The route guide is prepared by determining the track points that are going to be visited during the shipment. The trailer usage is determined by estimating the number of packages for the shipment, where each package has an identifier and a fixed volume of 25, 50, 100, or 200 lbs.
-                        These operations are performed in parallel by the two tasks Prepare Route Guide and Estimate Trailer Usage. The former task is allocated to the Shipment Planner with the shortest work queue, while the latter task is allocated to the Shipment Planner who was allocated an instance of this task the longest time ago. Once a Supply Officer has chosen to perform this task, they have the privilege to reallocate it to someone else without loss of the work performed thus far, and to suspend and resume working on the task. In addition, the system automatically starts the task for a Supply Officer once they have committed themselves to perform it.
-                        After the task Prepare Transportation Quote, based on the total volume of the freight and on the number of packages, a distinction is made among shipments that require a full truck load, those that require less than a truck load, and those that simply concern a single package. For shipments that require a full truckload, Client Liaisons from the Order Department try to arrange a Pickup appointment and a Delivery appointment by specifying the location for pickup/delivery and any specific instructions.
+                        The process starts with a determination of 5 days for each Purchase Order with one item and will increase by one day for each additional line item. After the Purchase Order is confirmed, the Shipment Planner will create a route guide and trailer usage.
+                        The route guide is a document that contains which trackpoints must be passed when the delivery takes place. While trailer usage is a document that contains how much trailer needs are needed by estimating the size of the order.
                         <br>
-                        The Client Liaisons associated with these two tasks should be different. When the shipment consists of more than one package but a dedicated truck is not required, then a Warehouse Officer arranges a Pickup appointment and a Client Liaison tries to arrange a delivery appointment.
-                        Afterward, a Senior Supply Officer, who holds a Bachelor’s in Supply Chain and Logistics Management, creates a Bill of Lading, which, similar to the Shipment Information document, requires the specification of an authorization code and a consignee number. If no Delivery appointment was made prior, a Supply Officer takes care of this and the remainder of the process is the same as for a shipment that requires a dedicated truck.
-                        For shipments consisting of a single package, the process is straightforward. All that needs to be done is by a Supply Officer – one who has the most experience in performing this particular task – to create a Motor Carrier Pickup manifest.
+                        If the Route Guide and Trailer Usage are completed on time by the Shipment Planner, the Junior Supply Officer will carry out a Prepare Transportation Quote by calculating the shipping costs based on the number of packages sent and the total volume of cargo shipped.
+                        The results of this calculation will be divided into 3 (Single Package, Less than Truckload, Full Truck-Load). Until finally a charge is made that needs to be paid in the next Payment process.
                         <br>
                         <br>
-                        After a freight has been picked up, the Payment subprocess can start. This process has two components, one which is concerned with payment for the shipment and one which is concerned with payment for the freight. The first task that needs to be performed in dealing with the payment for a shipment is the production of a Shipment Invoice containing the shipment costs related to the order number, the shipment number, and the company to be invoiced.
-                        This document includes a shipment payment order number that refers to both the order and the shipment numbers, the shipment costs, and the details of the beneficiary, which includes the company, the name and code of the beneficiary bank, and the name and number of the bank account.
+                        Once the load is picked up, the sub-processing of payments can start. This process has two components: one focuses on shipping payments and the other focuses on paying for the cargo. The Supply Admin Officer is responsible for handling payments for shipments and making Shipment Invoices.
+                        The Shipment Invoice contains the shipping costs associated with the order number, shipping number, and the company to be billed. The PO Manager will check whether the shipment has been prepaid. The Finance Officer will issue a Shipment Remittance Advice (billing) if the shipment has not been paid/Shipment Payment Order otherwise.
                         <br>
-                        A Senior Finance Officer who is the superior of this Finance Officer has to approve this document. In the latter case and in the case of correct payment, the shipment payment process is completed. An Account Manager can choose to have adjustment tasks to be started immediately for them upon completion of the processing of a Shipment Payment in order to expedite matters.
-                        As regards the payment for freight, a Purchase Order Manager specifies during the creation of a Purchase Order whether an invoice is required or not.
-                        <br>
-                        <br>
-                        When a TrackPoint is visited, a Track point Notice is issued by the Courier, registering the truck’s arrival and departure time, plus additional notes. Once all track points have been visited, Carrier Admin Officers need to log a Track point Order Entry for each TrackPoint, which contains a report for the specific Track point so that this information can be audited in the future.
-                        Track point Order Entries can be logged in parallel so long as there are Carrier Admin Officers available to work on the entries. An Acceptance Certificate refers to an order number and a shipment number and contains the acceptance date and delivery notes.
+                        The Senior Finance Officer must approve the above documents. If a client pays less then a debit adjustment is required, then the Account Manager will notify the client and the payment needs to be reprocessed. For other cases and cases related to correct payments, the delivery payment process is considered complete.
+                        Account Manager can choose additional tasks that need to be completed first to speed up the importance of completing the Shipment Payment process. When creating a Purchase order, the PO Manager determines whether an invoice is needed or not for payment of a Freight Invoice (Bill of Goods).
+                        The Freight Invoice contains the freight charges associated with the order number and the company to be billed.
                         <br>
                         <br>
-                        After the delivery of the freight, clients may request a Return of Merchandise or may want to lodge a Loss or Damage Claim. A Return of Merchandise document contains the reason for return and the line items to be returned, while a Loss or Damage Claim indicates the reason for the claim.
+                        The Freight in Transit sub-process is carried out in parallel with the Payment sub-process. A delivery truck may visit several destinations and some of them may be designated track points. Trackpoint notifications are issued by the Courier, which records the arrival and departure times of the trucks.
+                        <br>
+                        Carrier Admin Officers need to record a Trackpoint Order Entry for each TrackPoint, which contains a report for that particular Trackpoint. Order Entries can be logged in parallel as long as Carrier Admin Officers are available to work on the entries. While entries are being recorded, customer inquiries need to be handled by Client Liaison.
+                        After the transit is complete, the PO Manager creates an Acceptance Certificate which indicates that the shipment has been physically sent.
+                        <br>
+                        <br>
+                        After delivery of the goods, the client may apply for a Return of Goods or may wish to file a Loss or Damage Claim. This Return of Goods document, or Loss or Damage Claim is entered into the system by Client Liaison at the request of the client. If no client communication is received within a certain period of time after delivery, process the Order Fulfil Order.
                         <br>
                         <br>
                     </p>
@@ -205,7 +207,7 @@
                                 <a href="#" class="learn-more-2" onclick="seeDetails('farra')">Learn More</a>
                             </p>
                             <div class="user-image">
-                                <img src="assets/images/members/farra.jpg" alt="Farra Jessica">
+                                <img src="assets/images/members/farraj.jpg" alt="Farra Jessica">
                             </div>
                             <div class="team-info">
                                 <h3 class="user-name">Farra Jessica</h3>
