@@ -623,7 +623,7 @@ Header
 Welcome
 ---------------------------------------------
 */
-.welcome-area {
+.welcome-area{
   overflow: hidden;
   position: relative;
   display: flex;
@@ -636,7 +636,23 @@ Welcome
   height: 100vh;
 }
 
-.welcome-area .header-text {
+.welcome-area-proto{
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    rgba(145, 84, 153, 0.45), 
+    rgba(162, 89, 184, 0.45)
+  ),url(../images/prototype-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.welcome-area .header-text , .welcome-area-proto .header-text{
   position: absolute;
   top: 50%;
   transform: translateY(-55%);
@@ -644,7 +660,7 @@ Welcome
   width: 100%;
 }
 
-.welcome-area .header-text h1 {
+.welcome-area .header-text h1, .welcome-area-proto .header-text h1 {
   font-weight: 500;
   font-size: 36px;
   line-height: 54px;
@@ -653,7 +669,7 @@ Welcome
   color: #fff;
 }
 
-.welcome-area .header-text p {
+.welcome-area .header-text p , .welcome-area-proto .header-text p {
   font-weight: 400;
   font-size: 15px;
   color: #fff;
